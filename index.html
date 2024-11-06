@@ -190,10 +190,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-11-06 00:00:00 / 修改时间：21:54:46" itemprop="dateCreated datePublished" datetime="2024-11-06T00:00:00+08:00">2024-11-06</time>
+              <time title="创建时间：2024-11-06 00:00:00" itemprop="dateCreated datePublished" datetime="2024-11-06T00:00:00+08:00">2024-11-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-11-07 07:34:34" itemprop="dateModified" datetime="2024-11-07T07:34:34+08:00">2024-11-07</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -229,208 +235,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="C语言语法"><a href="#C语言语法" class="headerlink" title="C语言语法"></a>C语言语法</h1><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ul>
-<li>C语言中用来对变量、符号常量、函数、数组、类型等数据对象命名的有效字符序列统称为标识符</li>
-<li>C语言规定标识符只能由 <strong>字母__、__数字</strong> 和 <strong>下划线</strong> 3种字符组成，且第一个字符必须为字母或下划线</li>
-<li>合法<br>Sum,average,_total,day,month,Student_name,lotus_1_2_3,BASIC</li>
-<li>不合法<br>M.D.John,$123,#33,3D64,a&gt;b</li>
-</ul>
-<h2 id="C语言中的关键字"><a href="#C语言中的关键字" class="headerlink" title="C语言中的关键字"></a>C语言中的关键字</h2><p>（待补充详细说明）<br>auto,break,case,char,const,continue,default,do,double,else,enum,extern,float,for,goto,if,int,long,register,return,short,signed,sizeof,static,struct,switch,typedef,union,unsigned,void,volatile,while</p>
-<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><ul>
-<li><p>字面常量<br>12,0,-3;4.6,-1.23;’a’,’d’</p>
-</li>
-<li><p>符号常量（含义清楚，一改全改）</p>
-</li>
-</ul>
-<p>#define PRICE 30<br>#define PI 3.14159<br>#define EPSLON 1e-6<br>#define MAXN 1024</p>
-<h2 id="转义字符常量"><a href="#转义字符常量" class="headerlink" title="转义字符常量"></a>转义字符常量</h2><table>
-<thead>
-<tr>
-<th align="center">转义字符</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">\a</td>
-<td align="center">响铃</td>
-</tr>
-<tr>
-<td align="center">\b</td>
-<td align="center">退格</td>
-</tr>
-<tr>
-<td align="center">\f</td>
-<td align="center">换页</td>
-</tr>
-<tr>
-<td align="center">\n</td>
-<td align="center">换行</td>
-</tr>
-<tr>
-<td align="center">\r</td>
-<td align="center">回车</td>
-</tr>
-<tr>
-<td align="center">\t</td>
-<td align="center">水平制表符</td>
-</tr>
-<tr>
-<td align="center">\v</td>
-<td align="center">垂直制表符</td>
-</tr>
-<tr>
-<td align="center"><code>\\</code></td>
-<td align="center">反斜杠</td>
-</tr>
-<tr>
-<td align="center"><code>\&#39;</code></td>
-<td align="center">单引号</td>
-</tr>
-<tr>
-<td align="center"><code>\&quot;</code></td>
-<td align="center">双引号</td>
-</tr>
-<tr>
-<td align="center">\0</td>
-<td align="center">空字符</td>
-</tr>
-<tr>
-<td align="center">\ddd</td>
-<td align="center">1-3个八进制数</td>
-</tr>
-<tr>
-<td align="center">\xhh</td>
-<td align="center">hh为1-2个十六进制数</td>
-</tr>
-</tbody></table>
-<h2 id="输入输出格式（待补充详细说明）"><a href="#输入输出格式（待补充详细说明）" class="headerlink" title="输入输出格式（待补充详细说明）"></a>输入输出格式（待补充详细说明）</h2><table>
-<thead>
-<tr>
-<th align="center">格式字符</th>
-<th align="center">输出</th>
-<th align="center">输入</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">d,i</td>
-<td align="center">带符号十进制整数</td>
-<td align="center">带符号十进制整数</td>
-</tr>
-<tr>
-<td align="center">u</td>
-<td align="center">不带符号十进制整数</td>
-<td align="center">不带符号十进制整数</td>
-</tr>
-<tr>
-<td align="center">o</td>
-<td align="center">八进制无符号整数</td>
-<td align="center">八进制无符号整数</td>
-</tr>
-<tr>
-<td align="center">x</td>
-<td align="center">十六进制无符号整数（小写）</td>
-<td align="center">十六进制无符号整数（小写）</td>
-</tr>
-<tr>
-<td align="center">X</td>
-<td align="center">十六进制无符号整数（大写）</td>
-<td align="center">十六进制无符号整数（大写）</td>
-</tr>
-<tr>
-<td align="center">c</td>
-<td align="center">单个字符</td>
-<td align="center">单个字符</td>
-</tr>
-<tr>
-<td align="center">s</td>
-<td align="center">字符串</td>
-<td align="center">字符串</td>
-</tr>
-<tr>
-<td align="center">f,F</td>
-<td align="center">浮点数（小数点后有六位）</td>
-<td align="center">浮点数（小数点后有六位）</td>
-</tr>
-<tr>
-<td align="center">e,E</td>
-<td align="center">指数形式的浮点数（小数点后有六位）</td>
-<td align="center">指数形式的浮点数（小数点后有六位）</td>
-</tr>
-<tr>
-<td align="center">g,G</td>
-<td align="center">自动选择指数或浮点数格式（宽度较短的）</td>
-<td align="center">自动选择指数或浮点数格式</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center">附加格式</th>
-<th align="center">输出</th>
-<th align="center">输入</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">l</td>
-<td align="center">指明输出项的类型</td>
-<td align="center">修饰d,o,x,u时，表示输入长整型实数；修饰f,F,e,E时，表示输入长浮点型实数（按double型储存</td>
-</tr>
-<tr>
-<td align="center">L</td>
-<td align="center">指明输出项的类型</td>
-<td align="center">修饰f,F,e,E时，表示输入长浮点型实数（按long double型储存）</td>
-</tr>
-<tr>
-<td align="center">h</td>
-<td align="center">指明输出项的类型</td>
-<td align="center">修饰d,i,o,x,u时，表示输入短整型实数；</td>
-</tr>
-<tr>
-<td align="center">ll</td>
-<td align="center">指明输出项的类型</td>
-<td align="center">修饰d,o,x,u时，表示输入长长整型实数；修饰f,F,e,E时，表示输入长长浮点型实数（按long long double型储存）</td>
-</tr>
-<tr>
-<td align="center">w</td>
-<td align="center">指明输出项的宽度  输出项宽度为w个字符，不足时用空格填充</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">p</td>
-<td align="center">对实数，表示输出p位小数;对字符串，表示截取的字符个数</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">-</td>
-<td align="center">左对齐输出</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+</td>
-<td align="center">正数也带符号输出，显示正负号</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">#</td>
-<td align="center">八进制、十六进制前缀输出和浮点数自动添加小数点（确保至少由一个数字在小数点后）</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">*</td>
-<td align="center"></td>
-<td align="center">本输入项在输入后不存储</td>
-</tr>
-</tbody></table>
-<h2 id="库函数"><a href="#库函数" class="headerlink" title="库函数"></a>库函数</h2><p>（待补充详细说明）</p>
-<ul>
-<li><p>字符数据的输入输出<br>void putchar(char *c)<br>int getchar(void)  </p>
-</li>
-<li><p>格式输入和输出<br>printf()<br>scanf()  </p>
-</li>
-<li><p>字符串处理函数<br>strcpy(字符数组1,字符数组2)  功能：将字符数组2的内容复制到字符数组1中<br>strcat(字符数组1,字符数组2)  功能：将字符数组2的内容追加到字符数组1的尾部<br>strlen(字符数组)  功能：返回字符数组的长度<br>strcmp(字符数组1,字符数组2)  功能：比较两个字符数组的大小，若字符数组1大于字符数组2，则返回正数；若字符数组1小于字符数组2，则返回负数；若字符数组1等于字符数组2，则返回0<br>strncmp(字符数组1,字符数组2,n)  功能：比较两个字符数组的前n个字符，若字符数组1大于字符数组2，则返回正数；若字符数组1小于字符数组2，则返回负数；若字符数组1等于字符数组2，则返回0<br>strchr(字符数组,字符)  功能：在字符数组中查找字符，若找到，则返回该字符在字符数组中的位置；若没有找到，则返回NULL<br>strstr(字符数组1,字符数组2)  功能：在字符数组1中查找字符数组2，若找到，则返回字符数组2在字符数组1中的位置；若没有找到，则返回NULL<br>strlwr(字符数组)  功能：将字符数组中的所有大写字母转换为小写字母<br>strupr(字符数组)  功能：将字符数组中的所有小写字母转换为大写字母</p>
-</li>
-</ul>
-
+          <h1 id="C语言语法"><a href="#C语言语法" class="headerlink" title="C语言语法"></a>C语言语法</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/11/06/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%8D%E4%B9%A0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
